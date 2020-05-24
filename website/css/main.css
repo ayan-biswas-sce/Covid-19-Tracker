@@ -1,0 +1,65 @@
+@import "header.css";
+@import "section.css";
+@import "prevent.css";
+@import "footer.css";
+body{
+    background-color: whitesmoke;
+    background-image: url(../images/covid-body.png);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap : 0px;
+    grid-template-areas: 
+    "header"
+    "section"
+    "prevent"
+    "thanks"
+    "footer"
+  }
+  .header{
+    grid-area: "header";
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: rgb(245, 245, 255);
+    /*background-image: url(../images/covid-header.png);
+    background-size: contain;*/
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px -2px rgb(103, 52, 170);
+  }
+  .section{
+    grid-area: "section";
+    background-image: url("../images/covid-back.png");
+    background-blend-mode: lighten;
+    background-size: auto;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px -2px rgb(103, 52, 170);
+  }
+  .prevent{
+    grid-area: "prevent";      
+    box-shadow: 0 4px 8px -2px rgb(103, 52, 170);
+  }
+  .thanks{
+      grid-area: "thanks";
+      box-shadow: 0 4px 8px -2px rgb(103, 52, 170);
+  }
+  .footer{
+    grid-area: "footer";
+    font-size: 20px;
+    background: -webkit-linear-gradient(rgb(151, 11, 185), rgb(8, 85, 158));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h2{
+      font-size: 24px;
+      box-shadow: 0 4px 8px -2px rgb(103, 52, 170);
+  }

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Covid-19 Tracker | Ayan</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+    </head>
+    <body>
+    <div class="container">
+        <div class="header">
+            <div class="links">
+            <img class="img-header" style="float: left;" src="images/covid-header.png" width=auto height=90px><br>
+            <ul>
+                <li><a class="active" href="#section">◉ Live Statistics</a></li>
+                <li><a href="#thanks">Thanks to Staff</a></li>
+                <li><a href="#prevent">Preventive Measures</a></li>
+                <li><a href="#footer">About</a></li>
+            </ul>
+            </div>
+        </div>
+        <div id="section" class="section">
+            <div class="heading">
+            <strong><h1 align="center" class="live">◉ Live Statistics</h1></strong>
+            </div>
+            <div class="live-count">
+                <div class="box1">
+                    <h2 align="center">World-Wide Statistics</h2><br><span>#StaySafe</span><br><br>
+                    <span>Total Confirmed Cases:&emsp;<span class="span-result" id="confirm-int"></span></span><br><br>
+                    <span>Total Recovered:&emsp;<span class="span-result" id="recover-int"></span></span><br><br>
+                    <span>Total Deaths:&emsp;<span class="span-result" id="deaths-int"></span></span><br><br>
+                    <span>Recovery Percentage:&emsp;<span class="span-result" id="recover-percent-int"></span></span><br><br>
+                    <span>Death Percentage:&emsp;<span class="span-result" id="death-percent-int"></span></span><br>
+                    <ul class="refresh"><li><input id="refresh" class="refresh" type="button" value="⟳ Refresh"></li></ul>
+                </div>
+                <div class="box2">
+                    <h2 align="center">Statistics by Country</h2>
+                    <label for="country">Choose a Country:</label>
+                    <select id="country" class="selectedCountry">
+                        <option value="India">India</option>
+                        <option value="United States of America">United States of America</option>
+                        <option value="China">China</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="France">France</option>
+                        <option value="Israel">Israel</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Singapore">Singapore</option>
+
+                    </select>
+                    <span>Total Confirmed Cases:&emsp;<span class="span-result" id="confirm"></span></span><br><br>
+                    <span>Total Recovered:&emsp;<span class="span-result" id="recover"></span></span><br><br>
+                    <span>Total Deaths:&emsp;<span class="span-result" id="deaths"></span></span><br><br>
+                    <span>Recovery Percentage:&emsp;<span class="span-result" id="recover-percent"></span></span><br><br>
+                    <span>Death Percentage:&emsp;<span class="span-result" id="death-percent"></span></span><br>
+                    <ul class="refresh"><li><input id="refresh1" class="refresh1" type="button" value="⟳ Refresh"></li></ul>
+                </div>
+                <br>
+            </div>
+            <h2 style="background-color: lavender;" align="center">Click on Refresh if stats fail to load. Thanks.</h2>
+            <br>
+            <span class="lastupdate">Last Updated on: <span id="lastupdate" class="last span-result"> </span></span>
+        </div>
+        <div id="prevent" class="prevent">
+            <div class="heading">
+                <strong><h1 align="center" class="live">Stay Home. Save Lives.</h1></strong>
+                <h2 align="center">COVID-19 PREVENTIVE GUIDELINES</h2>
+            </div>
+            <div class="row1">
+                <div class="row1-box1 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/prevent/avoidcontact.png"><br>Avoid Direct Physical Contact</p>
+                </div>
+                <div class="row1-box2 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/prevent/mask.png"><br>Always wear a Mask While Going out</p>
+                </div>
+                <div class="row1-box3 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/prevent/handwash.png"><br>Wash Your Hands frequently</p>
+                </div>
+                <div class="row1-box4 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/prevent/healthy.png"><br>Eat Healthy, Boost your Immunity</p>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="row2-box1 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/prevent/quarantine.png"><br>Only go out when necessary</p>
+                </div>
+                <div class="row2-box2 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/prevent/sanitizer.png"><br>Apply Sanitizer frequently when in Workplace</p>
+                </div>
+                <div class="row2-box3 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/prevent/spread.png"><br>Keep fair distance from the Infected</p>
+                </div>
+                <div class="row2-box4 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/prevent/sneeze.png"><br>Cover your mouth when Sneezing</p>
+                </div>
+            </div>
+            <h2 align="center">Signs that you may be Affected</h2>
+            <div class="row3">
+                <div class="row2-box1 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/signs/sneeze.png"><br>You are Coughing more than Usual</p>
+                </div>
+                <div class="row2-box2 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/signs/breathing.png"><br>Facing Breathing Problems</p>
+                </div>
+                <div class="row2-box3 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/signs/fever.png"><br>Having high body temperature</p>
+                </div>
+            </div>
+            <div class="row4">
+                <div class="row2-box1 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/signs/disease.png"><br>Close Contact with affected persons</p>
+                </div>
+                <div class="row2-box2 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/signs/infection.png"><br>Respiratory Infections</p>
+                </div>
+                <div class="row2-box3 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/signs/pneumonia.png"><br>Prolong Pneumonia</p>
+                </div>
+            </div>
+            <h2 align="center">What to do if you find the above symptoms?</h2>
+            <div class="row5">
+                <div class="row2-box1 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/what/doctor.png"><br>Contact your Doctor</p>
+                </div>
+                <div class="row2-box2 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/what/hospital.png"><br>Go to the nearlest COVID Hospital</p>
+                </div>
+                <div class="row2-box3 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/what/test.png"><br>Get your COVID-19 tests done</p>
+                </div>
+            </div>
+            <p><blockquote><span class="para">The virus that causes COVID-19 infects people of all ages. However, evidence to date suggests that two groups of people are at a higher risk of getting severe COVID-19 disease. These are older people (that is people over 60 years old); and those with underlying medical conditions (such as cardiovascular disease, diabetes, chronic respiratory disease, and cancer). The risk of severe disease gradually increases with age starting from around 40 years. It's important that adults in this age range protect themselves and in turn protect others that may be more vulnerable.</span></blockquote></p>
+            <br><br>
+        </div>
+        <div id="thanks" class="thanks prevent heading">
+            <h1 class="live heading" align="center">Thanks to the COVID Warriors!</h1>
+            <div class="row1">
+                <div class="row1-box1 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/doctor.png"><br>Doctors</p>
+                </div>
+                <div class="row1-box2 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/surgeon.png"><br>Nurses</p>
+                </div>
+                <div class="row1-box3 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/cleaning.png"><br>Cleaning Workers</p>
+                </div>
+                <div class="row1-box4 zoom">
+                    <p>&emsp;&nbsp;<img height=200px width=200px src="images/policeman.png"><br>Police/CRPF/Armed Forces</p>
+                </div>
+            </div>
+            <p class="para"><blockquote><span class="para">We would like to thank each and everyone one of you for putting yourselves out there during these times. I want you to know that even though you might not get credit, people realize all the good you are doing for the community. Every single one of you should know I will be keeping you and your families in my thoughts and prayers 24/7. Even though I don't know who you heroes are, I don't have to, I know you are all heroes and I look up to you. Stay safe out there!
+                Hello all #FRONTLINERS all over the World - "modern heroes" Thank you so much for all the sacrifices and dedication, love and care. Know that we are all praying for your safety and health. All been LOVED AND APPRECIATED. We will Fight and Stand as One against Covid19. God Bless all to our Modern Heroes #Frontliners. Love and Care
+            </span></blockquote></p>
+
+        </div>
+        <div id="footer" class="footer">
+            <div class="footdetails">
+                <div class="block1">
+                    <h5>This project is made in accordance to the 12 Hour Hackathon organised by Tequed Labs at Sapthagiri College of Engineering, Bengaluru with the theme of COVID-19 on 23rd May 2020</h5>
+                    <img class="avatar" align="top" height=100 width=100 src="images/ayan2.jpg" alt="Author:Ayan"><br><h4>Ayan Biswas<br>
+                        SCE Bangalore<br>
+                        Computer Science & Engg. (Pre-Final Year)</h4>
+                        <a href="https://www.github.com/ayan-biswas-sce" target="_blank"><img class="zoom" src="images/social/github.png" height=50px width=50px></a>
+                        <a href="https://www.facebook.com/theayanbiswas" target="_blank"><img class="zoom" src="images/social/facebook.png" height=50px width=50px></a>
+                        <a href="https://www.instagram.com/ayaninos" target="_blank"><img class="avatar zoom" src="images/social/instagram.png" height=50px width=50px></a>
+                        <a href="https://www.twitter.com/ayaninos" target="_blank"><img class="zoom" src="images/social/twitter.png" height=50px width=50px></a>
+                        <a href="https://www.linkedin.com/in/ayan-biswas-sce/" target="_blank"><img class="zoom" src="images/social/linkedin.png" height=50px width=50px></a>
+                </div>
+                <div class="block2">
+                    <h5>This Project is Open-Sourced in Github too. Any Contributions for features are Welcome. You can Clone the repository and make a Pull Request</h5>
+
+                </div>
+            </div>
+            <h3 align="center">Ayan Biswas | Covid-19 Tracker | 2020</h3>
+        </div>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
+    </body>
+</html>
