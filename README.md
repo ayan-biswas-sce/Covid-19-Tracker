@@ -1,10 +1,26 @@
-# Weather-Journal App Project
+# Project Instructions
 
-## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+The goal of this project are:
+-Provide Realtime Statistics of Coronavirus Cases for both worldwide and country-wise.
+-Also Provide vital information for the prevention and symptoms of the COVID-19 disease.
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+## Getting started
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+`cd` into the project folder and run:
+- `npm install`
+
+## Starting the API Server
+
+Run `npm run start` to run the API server
+
+## Starting the Client - Development
+
+Run `npm run build-dev` to run the client
+
+## Starting the Client - Production
+
+Run `npm run build-prod` to run the client
+
+## Run Jest Test
+
+Run `npm run test` to run the tests
